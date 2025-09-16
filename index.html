@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Encrypt — 16-year-old Developer</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome CDN for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-yH2RRrUZph4Wv3WrW9oDpRHntkBfYpmiZxChqcHt4Sbmx9GEXdE2r5pVbZG7N5cGEBqLJHqIK4I5N1Ui5B+5xg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #fff;
+    }
+
+    .bright-mode {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: inherit;
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    .toggle-bright {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.5rem;
+      font-size: 1.2rem;
+      background: none;
+      border: none;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    .social-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .social-buttons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      background-color: #333;
+      color: white;
+      font-size: 1.5rem;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .social-buttons a:hover {
+      background-color: #555;
+    }
+
+    .cta-text {
+      margin-top: 2rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #222;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <!-- Bright Mode toggle button -->
+  <button class="toggle-bright" onclick="toggleBrightMode()" aria-label="Toggle Bright Mode">
+    <i class="fas fa-sun"></i>
+  </button>
+
+  <header>
+    <h1>Encrypt.rip</h1>
+    <nav>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Hi, I'm Encrypt</h2>
+    <p>A 16-year-old self-taught developer building clean, fast, and modern experiences.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a 16-year-old developer with a passion for building sleek, user-friendly websites and bots. 
+      I love writing clean code, experimenting with new technologies, and pushing the limits of what’s possible with the web.
+    </p>
+    <p>
+      I taught myself HTML, CSS, Python, and continue to learn every day. Whether it's building a portfolio, 
+      a landing page, or a small interactive app — I'm all about turning ideas into reality through code.
+    </p>
+    <p>
+      Beyond coding, I’m interested in UI/UX design, automation, and contributing to open-source projects. 
+      I'm also learning backend technologies like Node.js and databases like MongoDB and Firebase to expand my full-stack skills.
+    </p>
+
+  </section>
+
+  <footer>
+    <p>© 2025 Encrypt. Built with passion and code.</p>
+  </footer>
+
+  <script>
+    function toggleBrightMode() {
+      document.body.classList.toggle('bright-mode');
+    }
+  </script>
+</body>
+</html> 
